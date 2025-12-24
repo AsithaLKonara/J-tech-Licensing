@@ -1,0 +1,31 @@
+{
+  "name": "@upload-bridge/license-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --config tests/jest.config.js",
+    "test:watch": "jest --watch --config tests/jest.config.js",
+    "test:coverage": "jest --coverage --config tests/jest.config.js",
+    "test:edge-functions": "jest tests/edge-functions --config tests/jest.config.js",
+    "test:e2e": "jest tests/e2e --config tests/jest.config.js",
+    "test:database": "jest tests/database --config tests/jest.config.js",
+    "test:desktop-client": "jest tests/desktop-client --config tests/jest.config.js",
+    "test:dashboard": "jest tests/dashboard --config tests/jest.config.js",
+    "test:security": "jest tests/security --config tests/jest.config.js",
+    "db:seed": "node scripts/seed_data.js",
+    "db:push": "supabase db push",
+    "db:reset": "supabase db reset"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.10.4",
+    "dotenv": "^17.2.3",
+    "jest": "^30.2.0",
+    "jose": "^5.2.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}

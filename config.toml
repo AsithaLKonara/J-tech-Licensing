@@ -1,0 +1,29 @@
+[supabase]
+  # Link your local project to a Supabase project.
+  # The Project ID can be found in your Supabase dashboard: https://app.supabase.com/project/_/settings/general
+  project_id = "<YOUR_SUPABASE_PROJECT_ID>"
+
+  [supabase.functions]
+    # The directory where your Supabase Edge Functions are stored.
+    # This path is relative to the root of your project.
+    path = "supabase/functions"
+
+  [supabase.db]
+    # The URL to your Supabase database. You can find this in your Supabase dashboard:
+    # https://app.supabase.com/project/_/settings/database
+    # Example: postgresql://postgres:[YOUR-PASSWORD]@db.[YOUR-PROJECT-REF].supabase.co:5432/postgres
+    # It's recommended to use a .env file for sensitive credentials.
+    connection_string = "<YOUR_SUPABASE_DATABASE_CONNECTION_STRING>"
+
+  [supabase.auth]
+    # The URL to your Supabase Auth instance. You can find this in your Supabase dashboard:
+    # https://app.supabase.com/project/_/settings/auth
+    # Example: https://[YOUR-PROJECT-REF].supabase.co
+    # It's recommended to use a .env file for sensitive credentials.
+    site_url = "<YOUR_SUPABASE_AUTH_SITE_URL>"
+
+  [supabase.storage]
+    # The URL to your Supabase Storage instance. You can find this in your Supabase dashboard:
+    # https://app.supabase.com/project/_/settings/storage
+    # Example: https://[YOUR-PROJECT-REF].supabase.co
+    storage_url = "<YOUR_SUPABASE_STORAGE_URL>"

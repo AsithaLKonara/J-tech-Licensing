@@ -1,0 +1,26 @@
+# Next.js
+.next/
+out/
+
+# Node.js
+node_modules/
+.env.local
+.env.*
+
+# Supabase
+# Using online Supabase database - no local setup needed
+
+# Deno (for Edge Functions)
+.deno_plugins/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+thumbs.db
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
